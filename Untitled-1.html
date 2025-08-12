@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Recommendation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <h1>Travel Buddy</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h2>Find Your Perfect Destination</h2>
+    <div class="filters">
+      <select id="typeFilter">
+        <option value="">Select Type</option>
+        <option value="Beach">Beach</option>
+        <option value="Mountain">Mountain</option>
+        <option value="City">City</option>
+      </select>
+      <select id="budgetFilter">
+        <option value="">Select Budget</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button onclick="applyFilters()">Find</button>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations">
+    <h2>Recommended Destinations</h2>
+    <div id="destinationList" class="cards"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      We help travelers find destinations that match their preferences for
+      activities, budget, and climate. Plan your dream trip with ease!
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
